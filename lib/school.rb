@@ -4,7 +4,11 @@ class School
 
   def initialize(name)
     @name = name
-    @roster = Hash.new
+    # @roster = Hash.new
+    @roster = {
+      fifth: "Bob Vila",
+      sixth: "joey diaz"
+    }
   end
 
   def add_student(name, grade)
