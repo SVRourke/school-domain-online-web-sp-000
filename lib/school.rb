@@ -1,13 +1,12 @@
 # code here!
 class School
-  attr_reader :name, :roster
+  attr_reader :name,
+  @roster = Hash.new
 
   def initialize(name)
     @name = name
-    @roster = Hash.new
   end
-  puts @roster.class
-
+  @roster << name: "bob", grade: 1
   def add_student(name, grade)
   end
 
