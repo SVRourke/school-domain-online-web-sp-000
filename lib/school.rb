@@ -1,6 +1,6 @@
 # code here!
 class School
-  attr_reader :name
+  attr_reader :name, :roster
   @roster = Hash.new
 
   def initialize(name)
@@ -15,5 +15,4 @@ end
 
 a = School.new("Stranahan")
 puts a.name
-# a.add_student("Bob Vila", 5)
 puts a.roster
