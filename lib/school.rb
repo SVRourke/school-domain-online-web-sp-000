@@ -6,7 +6,7 @@ class School
     @name = name
     @roster = {}
   end
-  puts @roster.length
+  puts @roster.class
 
   def add_student(name, grade)
   end
