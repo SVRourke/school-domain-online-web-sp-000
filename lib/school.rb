@@ -4,13 +4,12 @@ class School
 
   def initialize(name)
     @name = name
-    @roster = {fifth: ["Bob vila"]}
+    @roster = {}
   end
 
   def add_student(name, grade)
     if roster.keys.include?(grade.to_sym)
       @roster[grade.to_sym] << name
-
     else
       roster[grade.to_sym] = []
       @roster[grade.to_sym] << name
