@@ -7,13 +7,12 @@ class School
     @roster = {}
   end
 
-  def add_student(name, grade)
-    sym = grade.to_sym
-    if roster.keys.include?(sym)
-      @roster[sym] << name
+  def add_student(name, grade
+    if roster.keys.include?(grade)
+      @roster[grade] << name
     else
-      roster[sym] = []
-      @roster[sym] << name
+      roster => {grade => [name]}
+      # @roster[grad] << name
     end
   end
 end
