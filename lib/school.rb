@@ -21,3 +21,4 @@ end
 a = School.new("Stranahan")
 puts a.name
 puts a.roster
+a.add_student("Bob vila", "fifth")
