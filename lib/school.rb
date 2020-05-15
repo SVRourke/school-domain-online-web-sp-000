@@ -12,3 +12,7 @@ class School
   end
 
 end
+
+a = School.new("Stranahan")
+puts a.name
+puts a.roster
