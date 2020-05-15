@@ -8,12 +8,12 @@ class School
   end
 
   def add_student(name, grade)
-    if roster.keys.include?(grade)
-      @roster[grade] << name
+    if roster.keys.include?(grade.to_sym)
+      @roster[grade.to_sym] << name
 
     else
-      roster[grade] = []
-      @roster[grade] << name
+      roster[grade.to_sym] = []
+      @roster[grade.to_sym] << name
     end
   end
 end
