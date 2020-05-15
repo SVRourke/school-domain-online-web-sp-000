@@ -15,5 +15,5 @@ end
 
 a = School.new("Stranahan")
 puts a.name
-a.add_student("Bob Vila", 5)
+# a.add_student("Bob Vila", 5)
 puts a.roster
